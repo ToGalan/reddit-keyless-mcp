@@ -44,7 +44,7 @@ Requires Node.js 18 or later.
 **Claude Code**
 
 ```bash
-claude mcp add reddit -- npx -y github:ToGalan/reddit-keyless-mcp
+claude mcp add reddit -- npx -y reddit-keyless-mcp
 ```
 
 **Claude Desktop and other MCP clients** (`claude_desktop_config.json` or `.mcp.json`):
@@ -54,11 +54,14 @@ claude mcp add reddit -- npx -y github:ToGalan/reddit-keyless-mcp
   "mcpServers": {
     "reddit": {
       "command": "npx",
-      "args": ["-y", "github:ToGalan/reddit-keyless-mcp"]
+      "args": ["-y", "reddit-keyless-mcp"]
     }
   }
 }
 ```
+
+To run the latest code from GitHub instead of the npm release, use
+`npx -y github:ToGalan/reddit-keyless-mcp`.
 
 Calls can take more than a minute when Reddit is rate-limiting. If your client times out tool
 calls sooner, raise its timeout (in Claude Code, `MCP_TOOL_TIMEOUT=300000`).
