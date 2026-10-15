@@ -9,8 +9,7 @@ it works for anyone, today.
 Reddit's Responsible Builder Policy (November 2025) put new Data API apps behind manual review,
 so `REDDIT_CLIENT_ID` / `REDDIT_CLIENT_SECRET` are no longer something you can create for
 yourself, and the anonymous `.json` endpoints now answer 403. Reddit MCP servers built on the API
-or `.json` stop working without approved credentials. The public RSS feeds still answer, and they
-carry enough for research: titles, links, authors, dates, post text and comment text.
+or `.json` stop working without approved credentials. 
 
 ## What it can do
 
