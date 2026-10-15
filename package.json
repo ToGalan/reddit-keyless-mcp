@@ -1,0 +1,35 @@
+{
+  "name": "reddit-keyless-mcp",
+  "version": "0.1.0",
+  "description": "Read-only Reddit MCP server that needs no API key: search, browse subreddits and read threads over Reddit's public RSS feeds.",
+  "type": "module",
+  "bin": {
+    "reddit-keyless-mcp": "src/server.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "reddit",
+    "rss",
+    "claude"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToGalan/reddit-keyless-mcp.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^3.25.76"
+  }
+}
